@@ -1,0 +1,41 @@
+product_id,nama_produk,kategori,harga,hpp
+P01,Kaos Polos Premium,Fashion,89000,54000
+P02,Kemeja Linen,Fashion,189000,97000
+P03,Celana Chino,Fashion,229000,140000
+P04,Hoodie Basic,Fashion,259000,130000
+P05,Sneakers Kanvas,Fashion,349000,184000
+P06,Tas Selempang,Fashion,149000,89000
+P07,Topi Baseball,Fashion,69000,39000
+P08,Jaket Denim,Fashion,399000,223000
+P09,Earbuds Bluetooth,Elektronik,299000,231000
+P10,Powerbank 10000mAh,Elektronik,189000,143000
+P11,Smartwatch Lite,Elektronik,649000,524000
+P12,Speaker Mini,Elektronik,259000,197000
+P13,Kabel USB-C,Elektronik,49000,39000
+P14,Mouse Wireless,Elektronik,129000,101000
+P15,Keyboard Mekanik,Elektronik,549000,411000
+P16,Webcam HD,Elektronik,399000,317000
+P17,Serum Vitamin C,Kecantikan,119000,56000
+P18,Sunscreen SPF50,Kecantikan,89000,35000
+P19,Facial Wash,Kecantikan,59000,24000
+P20,Lip Tint,Kecantikan,69000,29000
+P21,Toner Hydrating,Kecantikan,99000,40000
+P22,Masker Wajah (5 pcs),Kecantikan,75000,39000
+P23,Body Lotion,Kecantikan,79000,33000
+P24,Parfum 30ml,Kecantikan,199000,104000
+P25,Botol Minum 1L,Rumah Tangga,79000,45000
+P26,Set Pisau Dapur,Rumah Tangga,249000,164000
+P27,Lampu Meja LED,Rumah Tangga,159000,100000
+P28,Rak Serbaguna,Rumah Tangga,299000,182000
+P29,Sprei Katun,Rumah Tangga,279000,163000
+P30,Diffuser Aroma,Rumah Tangga,189000,113000
+P31,Wajan Anti Lengket,Rumah Tangga,229000,150000
+P32,Kotak Makan,Rumah Tangga,59000,37000
+P33,Matras Yoga,Olahraga,199000,132000
+P34,Dumbbell 2kg (pasang),Olahraga,149000,104000
+P35,Tali Skipping,Olahraga,49000,31000
+P36,Botol Shaker,Olahraga,69000,42000
+P37,Resistance Band,Olahraga,89000,53000
+P38,Kaos Lari Dry-Fit,Olahraga,129000,89000
+P39,Sepatu Lari,Olahraga,599000,363000
+P40,Tas Gym,Olahraga,219000,151000

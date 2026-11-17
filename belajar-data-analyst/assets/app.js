@@ -19,10 +19,27 @@
   const lvColor = (id) => (LEVELS.find((x) => x.id === id) || {}).color || "#16a34a";
 
   // ---------- State ----------
-  const blank = () => ({ v: 1, name: "", goal: 20, done: {}, tasks: {}, quiz: {}, notes: {}, activity: {}, badges: {}, files: {}, last: null, theme: null });
+  const blank = () => ({ v: 1, name: "", goal: 20, done: {}, tasks: {}, quiz: {}, notes: {}, activity: {}, badges: {}, files: {}, sql: {}, py: {}, bi: {}, drafts: {}, last: null, theme: null, v: 2 });
   let S = load();
+  migrate();
+  function migrate() {
+    const M = window.MIGRASI || {};
+    if (S.v >= 2) return;
+    const cnt = {};
+    Object.values(M).forEach((n) => (cnt[n] = (cnt[n] || 0) + 1));
+    const done = {}, notes = {}, tasks = {}, quiz = {};
+    Object.entries(S.done || {}).forEach(([k, v]) => { const n = M[k] || k; if (!done[n] || v > done[n]) done[n] = v; });
+    Object.entries(S.notes || {}).forEach(([k, v]) => { if (!v) return; const n = M[k] || k; notes[n] = notes[n] ? notes[n] + "\n\n" + v : v; });
+    const one = (k) => { const n = M[k] || k; return cnt[n] > 1 ? null : n; };
+    Object.entries(S.tasks || {}).forEach(([k, v]) => { const [id, i] = k.split(":"); const n = one(id); if (n) tasks[n + ":" + i] = v; });
+    Object.entries(S.quiz || {}).forEach(([k, v]) => { const [id, i] = k.split(":"); const n = one(id); if (n) quiz[n + ":" + i] = v; });
+    const files = {};
+    Object.entries(S.files || {}).forEach(([k, v]) => (files[k.startsWith("excel/") ? k : "excel/" + k] = v));
+    Object.assign(S, { done, notes, tasks, quiz, files, last: S.last ? M[S.last] || S.last : null, v: 2 });
+    try { localStorage.setItem(KEY, JSON.stringify(S)); } catch {}
+  }
   function load() {
-    try { const o = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY)) || {}); o.files = o.files || {}; return o; }
+    try { const o = Object.assign(blank(), JSON.parse(localStorage.getItem(KEY)) || {}); o.files = o.files || {}; o.sql = o.sql || {}; o.py = o.py || {}; o.bi = o.bi || {}; o.drafts = o.drafts || {}; return o; }
     catch { return blank(); }
   }
   let saveT;
@@ -49,19 +66,25 @@
   const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
   const levelPct = (lv) => pct(doneCount(lv.lessons), lv.lessons.length);
   const quizCorrect = () => Object.entries(S.quiz).filter(([k, v]) => { const [id, qi] = k.split(":"); const l = byId[id]; return l && l.quiz[qi] && l.quiz[qi].a === v; }).length;
+  const sqlDone = () => (window.LAB_SQL || []).filter((x) => S.sql && S.sql[x.id]).length;
+  const pyDone = () => ((window.LAB_PY || {}).ex || []).filter((x) => S.py && S.py[x.id]).length;
   const filesDone = () => FILES.filter((x) => S.files[x.file] && S.files[x.file].done).length;
   const nextLesson = () => (S.last && !isDone(S.last) ? byId[S.last] : null) || ALL.find((l) => !isDone(l.id)) || null;
 
   // ---------- Badges ----------
   const BADGES = [
     { id: "first", em: "🌱", t: "Langkah Pertama", d: "Selesaikan 1 pelajaran", ok: () => doneCount() >= 1 },
-    ...LEVELS.map((lv) => ({ id: "lv" + lv.id, em: ["📗", "📘", "📙", "📕", "🎓"][lv.id - 1] || "🏅", t: "Tamat " + lv.title, d: "Selesaikan semua pelajaran Level " + lv.id, ok: () => levelPct(lv) === 100 })),
+    ...LEVELS.map((lv) => ({ id: "lv" + lv.id, em: ["🧭", "📗", "📐", "🗄️", "🧹", "📊", "🐍", "💼", "🎓"][lv.id - 1] || "🏅", t: "Tamat " + lv.title, d: "Selesaikan semua pelajaran Level " + lv.id, ok: () => levelPct(lv) === 100 })),
     { id: "s3", em: "🔥", t: "Konsisten", d: "Streak 3 hari", ok: () => streak() >= 3 },
     { id: "s7", em: "⚡", t: "Seminggu Penuh", d: "Streak 7 hari", ok: () => streak() >= 7 },
     { id: "q10", em: "🧠", t: "Jago Kuis", d: "10 jawaban kuis benar", ok: () => quizCorrect() >= 10 },
     { id: "t20", em: "🛠️", t: "Tukang Praktik", d: "20 tugas latihan dicentang", ok: () => Object.values(S.tasks).filter(Boolean).length >= 20 },
     { id: "n5", em: "📝", t: "Pencatat Rajin", d: "Catatan di 5 pelajaran", ok: () => Object.values(S.notes).filter((n) => n && n.trim().length > 10).length >= 5 },
-    { id: "f3", em: "📊", t: "Praktisi Excel", d: "Selesaikan 3 file latihan", ok: () => filesDone() >= 3 },
+    { id: "sql10", em: "🗄️", t: "Penulis Query", d: "10 soal Lab SQL benar", ok: () => sqlDone() >= 10 },
+    { id: "sqlall", em: "🧙", t: "SQL Master", d: "Semua soal Lab SQL benar", ok: () => sqlDone() === (window.LAB_SQL || []).length },
+    { id: "py10", em: "🐍", t: "Pythonista", d: "10 soal Lab Python benar", ok: () => pyDone() >= 10 },
+    { id: "bi1", em: "📊", t: "BI Builder", d: "Selesaikan 1 proyek BI", ok: () => window.LABS && window.LABS.biDone(S) >= 1 },
+    { id: "f3", em: "📗", t: "Praktisi Excel", d: "Selesaikan 3 file latihan", ok: () => filesDone() >= 3 },
     { id: "fall", em: "💼", t: "Jagoan Studi Kasus", d: "Selesaikan semua file latihan", ok: () => FILES.length > 0 && filesDone() === FILES.length },
     { id: "all", em: "🏆", t: "Siap Kerja", d: "Semua pelajaran selesai", ok: () => doneCount() === ALL.length },
   ];
@@ -102,8 +125,10 @@
           ${lv.lessons.map((l) => `<a href="#/lesson/${l.id}" class="side-lesson ${isDone(l.id) ? "done" : ""} ${l.id === activeId ? "active" : ""}"><span class="chk"></span><span>${l.title}</span></a>`).join("")}
         </div></div></div>`;
     }).join("");
-    $("#sideFilesCount").textContent = `${filesDone()}/${FILES.length}`;
-    $("#sideFiles").classList.toggle("active", location.hash === "#/latihan");
+    const h = location.hash;
+    const items = [["#/lab/sql", "🗄️", "Lab SQL", `${sqlDone()}/${(window.LAB_SQL || []).length}`], ["#/lab/python", "🐍", "Lab Python", `${pyDone()}/${((window.LAB_PY || {}).ex || []).length}`],
+      ["#/latihan", "📗", "File Excel", `${filesDone()}/${FILES.length}`], ["#/proyek-bi", "📊", "Proyek BI", `${window.LABS ? window.LABS.biDone(S) : 0}/3`], ["#/unduhan", "⬇️", "Unduhan", ""]];
+    $("#sidePractice").innerHTML = `<a href="#/praktik" class="side-label link ${h === "#/praktik" ? "active" : ""}">Praktik</a>` + items.map(([href, ic, t, c]) => `<a href="${href}" class="side-prac ${h.startsWith(href) ? "active" : ""}">${ic} <span>${t}</span><b>${c}</b></a>`).join("");
     const p = pct(doneCount(), ALL.length);
     $("#sideProgPct").textContent = p + "%";
     requestAnimationFrame(() => ($("#sideProgBar").style.width = p + "%"));
@@ -116,7 +141,7 @@
     if (t) t.parentElement.classList.toggle("open");
     if (e.target.closest(".side-lesson")) closeDrawer();
   });
-  $("#sideFiles").addEventListener("click", () => closeDrawer());
+  $("#sidePractice").addEventListener("click", (e) => { if (e.target.closest("a")) closeDrawer(); });
   const closeDrawer = () => { $("#sidebar").classList.remove("open"); $("#scrim").classList.remove("open"); };
   $("#menuBtn").addEventListener("click", () => { $("#sidebar").classList.add("open"); $("#scrim").classList.add("open"); });
   $("#scrim").addEventListener("click", closeDrawer);
@@ -175,7 +200,7 @@
 
   function renderFiles() {
     mount(`
-      <div class="crumbs"><a href="#/">Beranda</a> / <span>File Latihan</span></div>
+      <div class="crumbs"><a href="#/">Beranda</a> / <a href="#/praktik">Praktik</a> / <span>File Excel</span></div>
       <section class="card level-head" style="--c:#16a34a">
         <span class="pill">Praktik langsung</span>
         <h1 style="margin-top:10px">File Latihan Excel: ${FILES.length} Studi Kasus</h1>
@@ -203,7 +228,7 @@
         <div>
           <div class="eyebrow">${greet()}${S.name ? ", " + esc(S.name) : ""} 👋</div>
           <h1>${done === 0 ? "Mulai perjalanan jadi Data Analyst" : p === 100 ? "Luar biasa, semua materi tamat! 🎉" : "Lanjutkan, kamu sudah " + p + "% jalan"}</h1>
-          <p>${ALL.length} pelajaran dalam ${LEVELS.length} level, dari dasar Excel sampai Power Query, DAX, SQL, Power BI, dan Python. Estimasi total ±${Math.round(TOTAL_MIN / 60)} jam materi inti.</p>
+          <p>${ALL.length} pelajaran dalam ${LEVELS.length} level: fondasi analisis, Excel, statistik, SQL, data cleaning, Power BI/Tableau/Looker Studio, Python, analisis bisnis, hingga karier. Plus ${(window.LAB_SQL || []).length} soal SQL & ${((window.LAB_PY || {}).ex || []).length} soal Python interaktif. ±${Math.round(TOTAL_MIN / 60)} jam materi inti.</p>
           ${nx ? `<a class="btn lg" href="#/lesson/${nx.id}">${done ? "Lanjut belajar" : "Mulai dari pelajaran 1"} →</a>` : `<a class="btn lg" href="#/level/1">Ulas kembali materi</a>`}
         </div>
         <div class="ring">
@@ -234,8 +259,12 @@
           </a>`; }).join("")}
       </section>
 
-      <div class="section-head"><h2>File latihan Excel</h2><a href="#/latihan">Lihat semua ${FILES.length} →</a></div>
-      <a class="card continue files-promo" href="#/latihan"><span class="play" style="animation:none">📥</span><div><small>${filesDone()}/${FILES.length} studi kasus selesai · cek jawaban otomatis</small><b>${(FILES.find((x) => !(S.files[x.file] || {}).done) || FILES[0] || {}).title || ""}</b></div><span class="arrow">→</span></a>
+      <div class="section-head"><h2>Praktik langsung</h2><a href="#/praktik">Semua latihan →</a></div>
+      <section class="hub mini">
+        ${[["#/lab/sql", "🗄️", "Lab SQL", sqlDone(), (window.LAB_SQL || []).length, "#2563eb"], ["#/lab/python", "🐍", "Lab Python", pyDone(), ((window.LAB_PY || {}).ex || []).length, "#ca8a04"],
+           ["#/latihan", "📗", "File Excel", filesDone(), FILES.length, "#16a34a"], ["#/proyek-bi", "📊", "Proyek BI", window.LABS ? window.LABS.biDone(S) : 0, 3, "#db2777"]]
+          .map(([href, ic, t, n, tot, c]) => `<a class="card hub-card" href="${href}" style="--c:${c}"><span class="hub-ico">${ic}</span><h3>${t}</h3><div class="bar"><i data-w="${tot ? Math.round((n / tot) * 100) : 0}" style="background:${c}"></i></div><div class="lv-foot"><span>${n}/${tot} selesai</span><span>→</span></div></a>`).join("")}
+      </section>
 
       <div class="section-head"><h2>Aktivitas belajar</h2><span class="muted">16 minggu terakhir</span></div>
       <section class="card">${heatmap()}</section>
@@ -309,7 +338,7 @@
       <nav class="tabs" role="tablist">
         <span class="tab-ink"></span>
         <button class="tab active" data-tab="materi">📖 Materi</button>
-        <button class="tab" data-tab="latihan">🧩 Latihan${FILES.some((x) => x.lessons.includes(id)) ? " + 📥" : ""} <span class="tcount" id="taskCount">${tasksDone}/${l.practice.length}</span></button>
+        <button class="tab" data-tab="latihan">🧩 Latihan${l.sqltag || l.pytag || FILES.some((x) => x.lessons.includes(id)) ? " + 🧪" : ""} <span class="tcount" id="taskCount">${tasksDone}/${l.practice.length}</span></button>
         <button class="tab" data-tab="kuis">❓ Kuis <span class="tcount" id="quizCount">${quizScore(l)}</span></button>
         <button class="tab" data-tab="catatan">📝 Catatan</button>
         <button class="tab" data-tab="sumber">🔗 Sumber <span class="tcount">${l.res.length}</span></button>
@@ -319,6 +348,13 @@
 
       <section class="panel" data-panel="latihan">
         <p class="muted">Kerjakan di Excel / Google Sheets, lalu centang. Buat data contoh sendiri atau gunakan dataset dari tab Sumber.</p>
+        ${(() => {
+          const out = [];
+          if (l.sqltag) { const n = (window.LAB_SQL || []).filter((x) => x.tag === l.sqltag); out.push(`<a class="card lab-link" href="#/lab/sql/${encodeURIComponent(l.sqltag)}" style="--c:#2563eb"><span class="hub-ico">🗄️</span><div><b>Lab SQL: ${l.sqltag}</b><small>${n.filter((x) => S.sql[x.id]).length}/${n.length} soal selesai · dikerjakan di browser, dicek otomatis</small></div><span class="arrow">→</span></a>`); }
+          if (l.pytag) { const n = ((window.LAB_PY || {}).ex || []).filter((x) => x.tag === l.pytag); out.push(`<a class="card lab-link" href="#/lab/python/${encodeURIComponent(l.pytag)}" style="--c:#ca8a04"><span class="hub-ico">🐍</span><div><b>Lab Python: ${l.pytag}</b><small>${n.filter((x) => S.py[x.id]).length}/${n.length} soal selesai · Python & pandas di browser</small></div><span class="arrow">→</span></a>`); }
+          if (/^v-[345]$/.test(id)) out.push(`<a class="card lab-link" href="#/proyek-bi" style="--c:#db2777"><span class="hub-ico">📊</span><div><b>Proyek BI dengan dataset TokoKita</b><small>Langkah demi langkah + angka acuan</small></div><span class="arrow">→</span></a>`);
+          return out.length ? `<h4 class="fl-title">🧪 Latihan interaktif</h4>${out.join("")}` : "";
+        })()}
         ${(() => { const fs = FILES.filter((x) => x.lessons.includes(id)); return fs.length ? `<h4 class="fl-title">📥 File latihan Excel untuk topik ini</h4><div class="file-grid compact">${fs.map((x, i) => fileCard(x, i)).join("")}</div><h4 class="fl-title">🧩 Latihan mandiri</h4>` : ""; })()}
         <div class="practice">${l.practice.map((t, i) => `<div class="task ${S.tasks[`${id}:${i}`] ? "on" : ""}" data-task="${i}" role="checkbox" tabindex="0" aria-checked="${!!S.tasks[`${id}:${i}`]}"><span class="box"></span><span class="txt">${t}</span></div>`).join("")}</div>
       </section>
@@ -609,10 +645,19 @@
     if ((m = h.match(/^#\/lesson\/(.+)$/))) renderLesson(decodeURIComponent(m[1]));
     else if ((m = h.match(/^#\/level\/(\d+)$/))) renderLevel(m[1]);
     else if (h === "#/latihan") renderFiles();
+    else if (h === "#/praktik") window.LABS.renderHub(view);
+    else if ((m = h.match(/^#\/lab\/sql(?:\/(.+))?$/))) window.LABS.renderSQL(view, m[1]);
+    else if ((m = h.match(/^#\/lab\/python(?:\/(.+))?$/))) window.LABS.renderPy(view, m[1]);
+    else if (h === "#/proyek-bi") window.LABS.renderBI(view);
+    else if (h === "#/unduhan") window.LABS.renderDL(view);
     else renderHome();
     $("#readProgress").style.width = 0;
   }
   addEventListener("hashchange", route);
+
+  // ---------- API untuk labs.js ----------
+  window.APP = { save, mount, toast, confetti, addMin, dkey, checkBadges, renderSide, enhance, esc };
+  Object.defineProperty(window.APP, "S", { get: () => S });
 
   // ---------- Boot ----------
   applyTheme();

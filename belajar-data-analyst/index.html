@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jalur Data Analyst — Tracker Belajar Excel</title>
-<meta name="description" content="Tracker belajar Data Analyst: Excel dasar sampai mahir, SQL, Power BI, Python. Progres tersimpan di browser." />
+<title>Jalur Data Analyst — Tracker Belajar</title>
+<meta name="description" content="Jalur lengkap Data Analyst: fondasi analisis, Excel, statistik, SQL, data cleaning, Power BI/Tableau/Looker Studio, Python, analisis bisnis, karier. Lab SQL & Python interaktif." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -18,13 +18,14 @@
   <aside class="sidebar" id="sidebar">
     <a href="#/" class="brand">
       <span class="brand-logo">fx</span>
-      <span class="brand-text"><b>Jalur Data Analyst</b><small>Excel → SQL → BI</small></span>
+      <span class="brand-text"><b>Jalur Data Analyst</b><small>SQL · BI · Python · Excel</small></span>
     </a>
     <div class="side-progress">
       <div class="side-progress-top"><span>Progres total</span><b id="sideProgPct">0%</b></div>
       <div class="bar"><i id="sideProgBar"></i></div>
     </div>
-    <a href="#/latihan" class="side-files" id="sideFiles">📥 <span>File Latihan Excel</span><b id="sideFilesCount">0/0</b></a>
+    <div class="side-practice" id="sidePractice"></div>
+    <div class="side-label">Materi · 9 level</div>
     <nav class="side-nav" id="sideNav"></nav>
     <div class="side-foot">
       <button class="btn ghost sm" data-action="settings">⚙️ Pengaturan & Backup</button>
@@ -50,7 +51,7 @@
 <!-- Command palette -->
 <div class="modal" id="searchModal" aria-hidden="true">
   <div class="modal-card palette">
-    <input id="searchInput" type="text" placeholder="Ketik: xlookup, pivot, sql, tanggal…" autocomplete="off" />
+    <input id="searchInput" type="text" placeholder="Ketik: join, cohort, tableau, pandas, xlookup…" autocomplete="off" />
     <div class="palette-list" id="searchList"></div>
     <div class="palette-foot"><span><kbd>↑</kbd><kbd>↓</kbd> pilih</span><span><kbd>Enter</kbd> buka</span><span><kbd>Esc</kbd> tutup</span></div>
   </div>
@@ -87,6 +88,9 @@
 
 <script src="data/materi.js"></script>
 <script src="data/latihan.js"></script>
+<script src="data/lab-sql.js"></script>
+<script src="data/lab-py.js"></script>
+<script src="assets/labs.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

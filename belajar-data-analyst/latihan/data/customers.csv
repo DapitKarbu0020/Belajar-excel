@@ -1,0 +1,601 @@
+customer_id,nama,gender,kota,tgl_daftar,channel_akuisisi
+C0001,Sari Lestari,P,Jakarta,2025-01-12,Organik
+C0002,Kartika Rahman,P,Palembang,2025-01-13,TikTok
+C0003,Agus Gunawan,P,Surabaya,2025-01-16,Instagram
+C0004,Galih Halim,P,Jakarta,2025-01-19,TikTok
+C0005,Putri Saputra,P,Jakarta,2025-01-24,TikTok
+C0006,Hadi Anggraini,L,Palembang,2025-01-26,Organik
+C0007,Joko Lestari,P,Yogyakarta,2025-01-30,Organik
+C0008,Agus Santoso,P,Jakarta,2025-02-12,Instagram
+C0009,Vina Permata,P,Jakarta,2025-02-12,Referral
+C0010,Tono Siregar,P,Bandung,2025-02-12,TikTok
+C0011,Intan Putra,L,Jakarta,2025-02-14,TikTok
+C0012,Nanda Putra,P,Yogyakarta,2025-02-14,Google Ads
+C0013,Maya Saputra,L,Jakarta,2025-02-16,Organik
+C0014,Nanda Santoso,P,Bandung,2025-02-18,Google Ads
+C0015,Budi Hidayat,L,Jakarta,2025-02-19,Organik
+C0016,Sari Lestari,L,Palembang,2025-02-20,Instagram
+C0017,Vina Hidayat,L,Makassar,2025-03-02,Google Ads
+C0018,Putri Saputra,P,Surabaya,2025-03-06,Referral
+C0019,Dimas Halim,P,Balikpapan,2025-03-06,Organik
+C0020,Joko Pratama,P,Medan,2025-03-08,Referral
+C0021,Laras Hidayat,L,Surabaya,2025-03-12,TikTok
+C0022,Irfan Utami,P,Jakarta,2025-03-13,TikTok
+C0023,Maya Siregar,P,Yogyakarta,2025-03-13,Instagram
+C0024,Oki Lestari,P,Jakarta,2025-03-14,Referral
+C0025,Intan Utami,P,Denpasar,2025-03-14,Instagram
+C0026,Kartika Halim,L,Surabaya,2025-03-18,Referral
+C0027,Oki Saputra,L,Bandung,2025-03-22,Google Ads
+C0028,Bella Rahman,P,Jakarta,2025-03-23,TikTok
+C0029,Dimas Anggraini,P,Denpasar,2025-03-23,Instagram
+C0030,Intan Permata,P,Surabaya,2025-03-25,TikTok
+C0031,Galih Hidayat,L,Palembang,2025-03-27,Referral
+C0032,Bella Hidayat,P,Denpasar,2025-03-28,Google Ads
+C0033,Fajar Rahman,L,Makassar,2025-03-30,Google Ads
+C0034,Tono Permata,P,Jakarta,2025-03-31,TikTok
+C0035,Dimas Anggraini,L,Semarang,2025-04-01,Google Ads
+C0036,Galih Lestari,P,Balikpapan,2025-04-05,Organik
+C0037,Agus Kusuma,P,Jakarta,2025-04-05,Organik
+C0038,Gita Hidayat,L,Jakarta,2025-04-06,Organik
+C0039,Oki Santoso,P,Surabaya,2025-04-07,Google Ads
+C0040,Dewi Nugroho,P,Medan,2025-04-09,TikTok
+C0041,Hana Permata,P,Jakarta,2025-04-10,Referral
+C0042,Dimas Permata,P,Surabaya,2025-04-16,Organik
+C0043,Intan Santoso,L,Medan,2025-04-16,Organik
+C0044,Wahyu Putra,L,Surabaya,2025-04-19,Google Ads
+C0045,Oki Pratama,P,Bandung,2025-04-20,Organik
+C0046,Irfan Wijaya,P,Yogyakarta,2025-04-29,Instagram
+C0047,Fajar Rahman,L,Jakarta,2025-05-02,Google Ads
+C0048,Hadi Permata,P,Bandung,2025-05-02,TikTok
+C0049,Hana Hidayat,P,Jakarta,2025-05-04,Referral
+C0050,Bella Lestari,P,Denpasar,2025-05-04,Instagram
+C0051,Irfan Permata,L,Yogyakarta,2025-05-06,Referral
+C0052,Rizki Halim,P,Surabaya,2025-05-06,Organik
+C0053,Hana Siregar,P,Jakarta,2025-05-10,Organik
+C0054,Eka Pratama,P,Palembang,2025-05-10,TikTok
+C0055,Hana Kusuma,P,Makassar,2025-05-12,Instagram
+C0056,Bella Hidayat,P,Balikpapan,2025-05-16,Referral
+C0057,Hadi Kusuma,L,Jakarta,2025-05-17,Organik
+C0058,Fajar Utami,P,Semarang,2025-05-21,Referral
+C0059,Hadi Lestari,P,Bandung,2025-05-22,Instagram
+C0060,Vina Santoso,P,Medan,2025-05-22,TikTok
+C0061,Agus Kusuma,P,Medan,2025-05-23,Instagram
+C0062,Kartika Siregar,P,Denpasar,2025-05-24,TikTok
+C0063,Lukman Hidayat,P,Bandung,2025-05-24,Google Ads
+C0064,Galih Pratama,L,Makassar,2025-05-27,Organik
+C0065,Dimas Halim,P,Semarang,2025-05-27,Referral
+C0066,Hana Saputra,P,Jakarta,2025-05-29,Google Ads
+C0067,Nanda Gunawan,P,Jakarta,2025-05-29,Organik
+C0068,Dewi Wijaya,L,Semarang,2025-06-01,TikTok
+C0069,Laras Hidayat,L,Jakarta,2025-06-01,Instagram
+C0070,Fajar Halim,L,Jakarta,2025-06-02,Referral
+C0071,Agus Halim,P,Surabaya,2025-06-02,Organik
+C0072,Fajar Permata,P,Medan,2025-06-02,Instagram
+C0073,Eka Hidayat,P,Semarang,2025-06-05,TikTok
+C0074,Oki Rahman,P,Surabaya,2025-06-05,TikTok
+C0075,Lukman Kusuma,L,Jakarta,2025-06-07,TikTok
+C0076,Irfan Lestari,P,Bandung,2025-06-08,Organik
+C0077,Andi Siregar,L,Balikpapan,2025-06-09,Referral
+C0078,Putri Utami,P,Bandung,2025-06-09,TikTok
+C0079,Irfan Permata,L,Surabaya,2025-06-10,Instagram
+C0080,Wahyu Rahman,P,Denpasar,2025-06-11,Referral
+C0081,Dimas Anggraini,P,Makassar,2025-06-12,Google Ads
+C0082,Zahra Halim,P,Yogyakarta,2025-06-13,Instagram
+C0083,Tono Siregar,P,Yogyakarta,2025-06-14,Referral
+C0084,Gita Anggraini,P,Bandung,2025-06-14,Instagram
+C0085,Eka Kusuma,L,Bandung,2025-06-16,Organik
+C0086,Vina Lestari,L,Jakarta,2025-06-16,Instagram
+C0087,Laras Gunawan,L,Makassar,2025-06-17,Referral
+C0088,Joko Rahman,L,Palembang,2025-06-19,Instagram
+C0089,Nanda Anggraini,P,Jakarta,2025-06-19,TikTok
+C0090,Oki Gunawan,L,Jakarta,2025-06-21,Instagram
+C0091,Nanda Permata,P,Jakarta,2025-06-21,TikTok
+C0092,Galih Wijaya,P,Jakarta,2025-06-22,Referral
+C0093,Laras Wijaya,P,Jakarta,2025-06-25,Instagram
+C0094,Lukman Utami,L,Bandung,2025-06-26,TikTok
+C0095,Fajar Anggraini,L,Surabaya,2025-06-27,Instagram
+C0096,Galih Permata,L,Bandung,2025-06-29,Referral
+C0097,Oki Halim,L,Bandung,2025-07-01,Instagram
+C0098,Tono Hidayat,L,Makassar,2025-07-01,Instagram
+C0099,Vina Permata,L,Surabaya,2025-07-08,Organik
+C0100,Zahra Kusuma,P,Jakarta,2025-07-08,Referral
+C0101,Putri Santoso,L,Palembang,2025-07-09,TikTok
+C0102,Fitri Pratama,P,Palembang,2025-07-12,Organik
+C0103,Hana Lestari,P,Jakarta,2025-07-12,Organik
+C0104,Irfan Permata,P,Medan,2025-07-12,Google Ads
+C0105,Vina Santoso,P,Semarang,2025-07-22,Google Ads
+C0106,Vina Utami,P,Bandung,2025-07-23,Referral
+C0107,Rizki Utami,P,Jakarta,2025-07-23,Organik
+C0108,Dewi Halim,P,Surabaya,2025-07-24,Organik
+C0109,Budi Pratama,P,Palembang,2025-07-24,TikTok
+C0110,Bella Lestari,P,Jakarta,2025-07-25,Organik
+C0111,Kartika Wijaya,P,Makassar,2025-07-28,Organik
+C0112,Wahyu Putra,P,Jakarta,2025-07-30,Instagram
+C0113,Budi Nugroho,P,Semarang,2025-08-02,TikTok
+C0114,Putri Utami,L,Bandung,2025-08-02,Instagram
+C0115,Yusuf Pratama,P,Jakarta,2025-08-05,Instagram
+C0116,Oki Nugroho,P,Jakarta,2025-08-10,Google Ads
+C0117,Bella Gunawan,L,Semarang,2025-08-12,Organik
+C0118,Irfan Nugroho,P,Semarang,2025-08-13,Organik
+C0119,Vina Gunawan,L,Surabaya,2025-08-13,Referral
+C0120,Gita Pratama,L,Bandung,2025-08-13,TikTok
+C0121,Wahyu Utami,P,Makassar,2025-08-14,Google Ads
+C0122,Zahra Halim,L,Bandung,2025-08-15,Instagram
+C0123,Zahra Santoso,P,Jakarta,2025-08-15,TikTok
+C0124,Hana Lestari,L,Yogyakarta,2025-08-16,TikTok
+C0125,Dewi Hidayat,P,Surabaya,2025-08-16,TikTok
+C0126,Umi Putra,P,Palembang,2025-08-17,Instagram
+C0127,Rizki Halim,P,Yogyakarta,2025-08-18,TikTok
+C0128,Agus Gunawan,P,Makassar,2025-08-18,Google Ads
+C0129,Bella Gunawan,P,Jakarta,2025-08-18,Organik
+C0130,Fitri Santoso,L,Bandung,2025-08-19,TikTok
+C0131,Agus Gunawan,L,Bandung,2025-08-20,Instagram
+C0132,Sari Hidayat,P,Makassar,2025-08-22,Organik
+C0133,Tono Santoso,P,Bandung,2025-08-23,Organik
+C0134,Dimas Hidayat,L,Denpasar,2025-08-24,Organik
+C0135,Rizki Wijaya,P,Jakarta,2025-08-24,Organik
+C0136,Hadi Lestari,P,Bandung,2025-08-26,Referral
+C0137,Nanda Lestari,L,Bandung,2025-08-28,Organik
+C0138,Fitri Pratama,L,Jakarta,2025-09-02,Google Ads
+C0139,Rizki Saputra,L,Medan,2025-09-02,TikTok
+C0140,Dewi Santoso,P,Surabaya,2025-09-02,Organik
+C0141,Bella Halim,L,Balikpapan,2025-09-03,TikTok
+C0142,Eka Permata,P,Surabaya,2025-09-04,Referral
+C0143,Bella Lestari,P,Denpasar,2025-09-04,TikTok
+C0144,Kartika Utami,P,Makassar,2025-09-04,Organik
+C0145,Dewi Kusuma,P,Medan,2025-09-05,Organik
+C0146,Galih Lestari,P,Yogyakarta,2025-09-07,Instagram
+C0147,Eka Anggraini,P,Bandung,2025-09-09,Organik
+C0148,Hadi Saputra,P,Bandung,2025-09-12,Referral
+C0149,Eka Halim,P,Palembang,2025-09-12,Instagram
+C0150,Intan Anggraini,L,Yogyakarta,2025-09-14,TikTok
+C0151,Umi Utami,P,Jakarta,2025-09-14,Instagram
+C0152,Laras Nugroho,L,Jakarta,2025-09-18,Referral
+C0153,Fajar Santoso,P,Medan,2025-09-19,TikTok
+C0154,Citra Putra,L,Surabaya,2025-09-20,Referral
+C0155,Yusuf Putra,P,Surabaya,2025-09-20,Google Ads
+C0156,Oki Wijaya,P,Surabaya,2025-09-21,Organik
+C0157,Galih Saputra,P,Palembang,2025-09-21,Organik
+C0158,Oki Hidayat,P,Jakarta,2025-09-25,TikTok
+C0159,Fajar Wijaya,P,Jakarta,2025-09-25,Referral
+C0160,Fajar Hidayat,P,Jakarta,2025-09-27,TikTok
+C0161,Wahyu Rahman,P,Balikpapan,2025-09-27,Instagram
+C0162,Intan Siregar,L,Denpasar,2025-09-28,TikTok
+C0163,Intan Hidayat,L,Medan,2025-09-28,Instagram
+C0164,Irfan Halim,P,Balikpapan,2025-10-02,TikTok
+C0165,Joko Santoso,P,Medan,2025-10-02,Organik
+C0166,Umi Wijaya,P,Palembang,2025-10-03,Instagram
+C0167,Zahra Hidayat,L,Palembang,2025-10-04,Instagram
+C0168,Nanda Anggraini,P,Bandung,2025-10-06,Instagram
+C0169,Umi Kusuma,L,Yogyakarta,2025-10-06,Organik
+C0170,Vina Gunawan,P,Surabaya,2025-10-08,Google Ads
+C0171,Umi Gunawan,P,Yogyakarta,2025-10-11,Instagram
+C0172,Kartika Gunawan,P,Makassar,2025-10-12,Organik
+C0173,Joko Saputra,P,Jakarta,2025-10-13,TikTok
+C0174,Bella Anggraini,L,Medan,2025-10-13,Organik
+C0175,Bella Pratama,P,Denpasar,2025-10-14,Referral
+C0176,Yusuf Siregar,P,Surabaya,2025-10-15,TikTok
+C0177,Maya Hidayat,P,Denpasar,2025-10-16,Instagram
+C0178,Galih Rahman,L,Makassar,2025-10-17,Instagram
+C0179,Fajar Putra,P,Semarang,2025-10-17,Organik
+C0180,Intan Gunawan,P,Jakarta,2025-10-19,TikTok
+C0181,Irfan Siregar,P,Jakarta,2025-10-19,Organik
+C0182,Putri Siregar,L,Yogyakarta,2025-10-20,Referral
+C0183,Galih Wijaya,P,Palembang,2025-10-20,Organik
+C0184,Oki Permata,L,Jakarta,2025-10-24,TikTok
+C0185,Hana Anggraini,P,Jakarta,2025-10-24,TikTok
+C0186,Wahyu Wijaya,L,Surabaya,2025-10-25,Organik
+C0187,Yusuf Nugroho,L,Palembang,2025-10-27,Referral
+C0188,Agus Putra,P,Denpasar,2025-10-28,TikTok
+C0189,Fitri Wijaya,P,Palembang,2025-10-29,Google Ads
+C0190,Galih Wijaya,L,Jakarta,2025-10-31,Google Ads
+C0191,Yusuf Rahman,P,Semarang,2025-11-01,Organik
+C0192,Irfan Permata,L,Bandung,2025-11-01,Instagram
+C0193,Dimas Permata,P,Jakarta,2025-11-02,Google Ads
+C0194,Nanda Hidayat,P,Bandung,2025-11-02,TikTok
+C0195,Laras Kusuma,P,Balikpapan,2025-11-02,Organik
+C0196,Fitri Saputra,P,Medan,2025-11-03,TikTok
+C0197,Citra Santoso,P,Balikpapan,2025-11-04,TikTok
+C0198,Umi Rahman,P,Surabaya,2025-11-04,Google Ads
+C0199,Rizki Saputra,P,Bandung,2025-11-06,Instagram
+C0200,Bella Nugroho,P,Yogyakarta,2025-11-06,Organik
+C0201,Laras Halim,P,Bandung,2025-11-06,TikTok
+C0202,Intan Siregar,L,Balikpapan,2025-11-08,Instagram
+C0203,Galih Permata,P,Jakarta,2025-11-08,TikTok
+C0204,Nanda Gunawan,P,Jakarta,2025-11-09,Organik
+C0205,Sari Kusuma,P,Palembang,2025-11-11,TikTok
+C0206,Hadi Kusuma,P,Jakarta,2025-11-13,TikTok
+C0207,Dewi Gunawan,P,Jakarta,2025-11-15,Organik
+C0208,Irfan Anggraini,L,Jakarta,2025-11-15,TikTok
+C0209,Umi Wijaya,L,Medan,2025-11-17,Google Ads
+C0210,Kartika Putra,L,Bandung,2025-11-18,Organik
+C0211,Vina Gunawan,P,Surabaya,2025-11-19,Organik
+C0212,Laras Gunawan,P,Yogyakarta,2025-11-20,Google Ads
+C0213,Gita Wijaya,P,Surabaya,2025-11-22,Google Ads
+C0214,Budi Halim,L,Surabaya,2025-11-24,Instagram
+C0215,Sari Wijaya,L,Balikpapan,2025-11-24,Instagram
+C0216,Kartika Rahman,P,Denpasar,2025-11-24,Google Ads
+C0217,Dewi Gunawan,L,Surabaya,2025-11-25,Google Ads
+C0218,Putri Kusuma,P,Surabaya,2025-11-25,Organik
+C0219,Vina Permata,L,Denpasar,2025-11-25,Organik
+C0220,Wahyu Halim,L,Jakarta,2025-11-29,Google Ads
+C0221,Rizki Lestari,P,Medan,2025-12-01,TikTok
+C0222,Eka Siregar,P,Semarang,2025-12-02,Instagram
+C0223,Wahyu Pratama,L,Denpasar,2025-12-02,Referral
+C0224,Maya Halim,P,Surabaya,2025-12-03,TikTok
+C0225,Umi Utami,L,Bandung,2025-12-06,Google Ads
+C0226,Putri Anggraini,P,Makassar,2025-12-07,TikTok
+C0227,Zahra Saputra,P,Yogyakarta,2025-12-07,TikTok
+C0228,Dimas Halim,P,Bandung,2025-12-08,Google Ads
+C0229,Bella Rahman,P,Jakarta,2025-12-11,Google Ads
+C0230,Hana Utami,P,Jakarta,2025-12-12,TikTok
+C0231,Laras Kusuma,L,Medan,2025-12-12,Google Ads
+C0232,Sari Lestari,P,Surabaya,2025-12-13,Google Ads
+C0233,Maya Putra,L,Palembang,2025-12-13,TikTok
+C0234,Putri Lestari,P,Yogyakarta,2025-12-16,Instagram
+C0235,Maya Utami,P,Balikpapan,2025-12-17,Organik
+C0236,Andi Gunawan,L,Semarang,2025-12-17,Instagram
+C0237,Fitri Nugroho,P,Jakarta,2025-12-17,Referral
+C0238,Oki Permata,P,Surabaya,2025-12-18,Instagram
+C0239,Zahra Hidayat,P,Palembang,2025-12-19,TikTok
+C0240,Lukman Siregar,P,Bandung,2025-12-19,Instagram
+C0241,Irfan Nugroho,L,Jakarta,2025-12-20,Instagram
+C0242,Zahra Saputra,P,Jakarta,2025-12-21,Organik
+C0243,Laras Utami,L,Jakarta,2025-12-21,Instagram
+C0244,Rizki Permata,P,Makassar,2025-12-21,Organik
+C0245,Lukman Utami,P,Jakarta,2025-12-22,Referral
+C0246,Agus Lestari,P,Surabaya,2025-12-22,Google Ads
+C0247,Dimas Wijaya,L,Jakarta,2025-12-22,TikTok
+C0248,Maya Putra,P,Bandung,2025-12-23,Organik
+C0249,Gita Saputra,L,Jakarta,2025-12-24,Google Ads
+C0250,Fitri Anggraini,P,Jakarta,2025-12-24,Instagram
+C0251,Wahyu Santoso,P,Jakarta,2025-12-25,Organik
+C0252,Fajar Anggraini,P,Bandung,2025-12-25,Google Ads
+C0253,Umi Pratama,P,Yogyakarta,2025-12-26,TikTok
+C0254,Kartika Halim,P,Palembang,2025-12-26,Instagram
+C0255,Galih Santoso,P,Balikpapan,2025-12-26,Instagram
+C0256,Vina Lestari,P,Jakarta,2025-12-26,Google Ads
+C0257,Putri Siregar,P,Surabaya,2025-12-27,Google Ads
+C0258,Umi Siregar,P,Jakarta,2025-12-27,Instagram
+C0259,Nanda Gunawan,P,Jakarta,2025-12-27,TikTok
+C0260,Dewi Hidayat,P,Balikpapan,2025-12-27,TikTok
+C0261,Sari Saputra,L,Makassar,2025-12-27,Instagram
+C0262,Rizki Anggraini,P,Jakarta,2025-12-30,Organik
+C0263,Tono Permata,P,Makassar,2026-01-01,Organik
+C0264,Maya Saputra,P,Surabaya,2026-01-02,Instagram
+C0265,Kartika Nugroho,L,Jakarta,2026-01-02,Referral
+C0266,Sari Anggraini,P,Jakarta,2026-01-03,Google Ads
+C0267,Rizki Kusuma,P,Palembang,2026-01-05,Referral
+C0268,Gita Wijaya,P,Semarang,2026-01-05,TikTok
+C0269,Umi Santoso,P,Jakarta,2026-01-08,Organik
+C0270,Oki Permata,L,Semarang,2026-01-09,Instagram
+C0271,Rizki Pratama,P,Palembang,2026-01-09,Instagram
+C0272,Zahra Anggraini,P,Bandung,2026-01-10,Organik
+C0273,Yusuf Nugroho,P,Surabaya,2026-01-12,Instagram
+C0274,Gita Saputra,P,Makassar,2026-01-13,Google Ads
+C0275,Budi Santoso,P,Medan,2026-01-13,Organik
+C0276,Andi Wijaya,P,Denpasar,2026-01-14,Instagram
+C0277,Citra Hidayat,L,Palembang,2026-01-18,Organik
+C0278,Kartika Saputra,P,Jakarta,2026-01-19,Referral
+C0279,Sari Siregar,L,Jakarta,2026-01-20,Organik
+C0280,Sari Gunawan,P,Surabaya,2026-01-22,Instagram
+C0281,Tono Wijaya,L,Surabaya,2026-01-23,Google Ads
+C0282,Agus Anggraini,P,Semarang,2026-01-23,Organik
+C0283,Bella Saputra,L,Surabaya,2026-01-24,Organik
+C0284,Putri Kusuma,P,Medan,2026-01-24,Organik
+C0285,Sari Nugroho,P,Jakarta,2026-01-24,Instagram
+C0286,Citra Kusuma,P,Bandung,2026-01-24,TikTok
+C0287,Laras Putra,L,Makassar,2026-01-26,Google Ads
+C0288,Sari Lestari,P,Bandung,2026-01-30,TikTok
+C0289,Tono Gunawan,P,Medan,2026-01-30,Instagram
+C0290,Laras Utami,P,Jakarta,2026-02-01,TikTok
+C0291,Putri Hidayat,P,Bandung,2026-02-02,TikTok
+C0292,Fajar Halim,L,Jakarta,2026-02-03,Organik
+C0293,Lukman Permata,P,Balikpapan,2026-02-03,Referral
+C0294,Hadi Pratama,L,Surabaya,2026-02-05,TikTok
+C0295,Vina Santoso,P,Surabaya,2026-02-06,TikTok
+C0296,Galih Saputra,L,Surabaya,2026-02-06,Instagram
+C0297,Eka Siregar,P,Surabaya,2026-02-07,Referral
+C0298,Citra Saputra,L,Makassar,2026-02-07,TikTok
+C0299,Tono Saputra,L,Bandung,2026-02-07,Google Ads
+C0300,Kartika Lestari,P,Bandung,2026-02-08,Google Ads
+C0301,Zahra Utami,P,Semarang,2026-02-09,TikTok
+C0302,Putri Putra,L,Surabaya,2026-02-11,Organik
+C0303,Intan Rahman,L,Bandung,2026-02-14,TikTok
+C0304,Irfan Putra,P,Yogyakarta,2026-02-15,TikTok
+C0305,Dimas Hidayat,L,Medan,2026-02-15,Instagram
+C0306,Budi Santoso,P,Jakarta,2026-02-16,Instagram
+C0307,Agus Hidayat,P,Jakarta,2026-02-16,Google Ads
+C0308,Yusuf Halim,P,Balikpapan,2026-02-20,Organik
+C0309,Umi Anggraini,L,Surabaya,2026-02-21,Google Ads
+C0310,Andi Gunawan,P,Jakarta,2026-02-22,Google Ads
+C0311,Maya Halim,P,Jakarta,2026-02-24,Google Ads
+C0312,Zahra Rahman,P,Makassar,2026-02-24,Instagram
+C0313,Fajar Utami,L,Bandung,2026-02-24,Organik
+C0314,Andi Gunawan,P,Jakarta,2026-02-25,Google Ads
+C0315,Oki Santoso,P,Jakarta,2026-02-25,Organik
+C0316,Hadi Pratama,L,Jakarta,2026-02-25,Google Ads
+C0317,Tono Utami,P,Surabaya,2026-02-25,Instagram
+C0318,Andi Gunawan,L,Yogyakarta,2026-02-26,TikTok
+C0319,Intan Putra,P,Jakarta,2026-02-27,TikTok
+C0320,Sari Pratama,L,Makassar,2026-02-28,Organik
+C0321,Joko Pratama,P,Jakarta,2026-03-01,Google Ads
+C0322,Hana Siregar,P,Jakarta,2026-03-03,Instagram
+C0323,Hadi Putra,L,Semarang,2026-03-04,Organik
+C0324,Sari Utami,L,Bandung,2026-03-04,Organik
+C0325,Sari Santoso,L,Bandung,2026-03-04,Organik
+C0326,Hana Pratama,P,Semarang,2026-03-04,Referral
+C0327,Intan Anggraini,L,Denpasar,2026-03-05,Google Ads
+C0328,Andi Kusuma,L,Bandung,2026-03-05,Organik
+C0329,Maya Utami,P,Yogyakarta,2026-03-05,Organik
+C0330,Vina Santoso,L,Surabaya,2026-03-06,TikTok
+C0331,Lukman Rahman,P,Bandung,2026-03-07,TikTok
+C0332,Rizki Hidayat,P,Jakarta,2026-03-08,Instagram
+C0333,Wahyu Utami,L,Jakarta,2026-03-08,TikTok
+C0334,Oki Putra,P,Bandung,2026-03-08,Google Ads
+C0335,Rizki Putra,L,Balikpapan,2026-03-10,Instagram
+C0336,Yusuf Permata,P,Medan,2026-03-10,Referral
+C0337,Rizki Nugroho,P,Makassar,2026-03-12,Instagram
+C0338,Wahyu Saputra,L,Jakarta,2026-03-12,TikTok
+C0339,Nanda Anggraini,P,Denpasar,2026-03-13,Google Ads
+C0340,Laras Lestari,P,Yogyakarta,2026-03-13,Organik
+C0341,Citra Lestari,P,Semarang,2026-03-15,TikTok
+C0342,Tono Santoso,P,Medan,2026-03-15,Instagram
+C0343,Intan Lestari,L,Surabaya,2026-03-16,Instagram
+C0344,Maya Pratama,P,Surabaya,2026-03-16,Google Ads
+C0345,Galih Gunawan,L,Balikpapan,2026-03-17,Instagram
+C0346,Dimas Utami,L,Bandung,2026-03-17,Google Ads
+C0347,Bella Gunawan,P,Surabaya,2026-03-17,TikTok
+C0348,Laras Kusuma,P,Jakarta,2026-03-17,Instagram
+C0349,Bella Anggraini,L,Surabaya,2026-03-17,Google Ads
+C0350,Joko Hidayat,P,Palembang,2026-03-19,Google Ads
+C0351,Hana Putra,P,Semarang,2026-03-20,TikTok
+C0352,Galih Saputra,P,Jakarta,2026-03-22,Organik
+C0353,Gita Wijaya,P,Yogyakarta,2026-03-22,Referral
+C0354,Tono Hidayat,L,Surabaya,2026-03-23,Google Ads
+C0355,Eka Anggraini,L,Bandung,2026-03-23,Referral
+C0356,Laras Hidayat,P,Medan,2026-03-24,Referral
+C0357,Hadi Anggraini,L,Denpasar,2026-03-24,Instagram
+C0358,Putri Wijaya,P,Yogyakarta,2026-03-27,Google Ads
+C0359,Kartika Gunawan,P,Jakarta,2026-03-27,TikTok
+C0360,Putri Lestari,P,Denpasar,2026-03-28,Instagram
+C0361,Dewi Permata,P,Jakarta,2026-03-28,Instagram
+C0362,Eka Lestari,P,Medan,2026-03-29,Instagram
+C0363,Irfan Halim,P,Jakarta,2026-03-29,Organik
+C0364,Andi Nugroho,L,Jakarta,2026-03-30,Referral
+C0365,Dimas Saputra,P,Makassar,2026-03-31,TikTok
+C0366,Eka Kusuma,P,Bandung,2026-04-02,Google Ads
+C0367,Wahyu Utami,P,Balikpapan,2026-04-02,Referral
+C0368,Eka Nugroho,P,Makassar,2026-04-04,Organik
+C0369,Nanda Nugroho,P,Semarang,2026-04-06,Google Ads
+C0370,Tono Permata,P,Jakarta,2026-04-06,Instagram
+C0371,Lukman Wijaya,L,Makassar,2026-04-08,Organik
+C0372,Dimas Kusuma,P,Semarang,2026-04-09,Organik
+C0373,Bella Saputra,P,Denpasar,2026-04-11,Google Ads
+C0374,Gita Anggraini,L,Medan,2026-04-11,Instagram
+C0375,Citra Gunawan,L,Bandung,2026-04-18,Organik
+C0376,Agus Anggraini,P,Jakarta,2026-04-18,Organik
+C0377,Putri Utami,L,Yogyakarta,2026-04-20,Instagram
+C0378,Vina Halim,L,Jakarta,2026-04-20,Google Ads
+C0379,Zahra Halim,L,Semarang,2026-04-21,Instagram
+C0380,Sari Permata,L,Jakarta,2026-04-23,Organik
+C0381,Dewi Gunawan,L,Balikpapan,2026-04-23,Referral
+C0382,Tono Utami,P,Jakarta,2026-04-23,TikTok
+C0383,Intan Permata,P,Medan,2026-04-25,Organik
+C0384,Putri Pratama,P,Yogyakarta,2026-04-25,Google Ads
+C0385,Gita Hidayat,P,Jakarta,2026-04-27,Organik
+C0386,Zahra Anggraini,P,Jakarta,2026-04-28,Instagram
+C0387,Andi Permata,P,Medan,2026-04-28,TikTok
+C0388,Galih Wijaya,L,Jakarta,2026-04-29,Instagram
+C0389,Citra Hidayat,P,Balikpapan,2026-04-30,Organik
+C0390,Gita Rahman,L,Jakarta,2026-05-02,Organik
+C0391,Wahyu Pratama,P,Yogyakarta,2026-05-05,Organik
+C0392,Wahyu Utami,P,Jakarta,2026-05-06,TikTok
+C0393,Budi Saputra,P,Jakarta,2026-05-06,TikTok
+C0394,Vina Wijaya,P,Palembang,2026-05-07,Instagram
+C0395,Umi Santoso,L,Medan,2026-05-07,Referral
+C0396,Yusuf Rahman,P,Jakarta,2026-05-09,Organik
+C0397,Nanda Putra,P,Surabaya,2026-05-10,TikTok
+C0398,Zahra Wijaya,P,Jakarta,2026-05-11,TikTok
+C0399,Vina Santoso,P,Bandung,2026-05-11,TikTok
+C0400,Umi Pratama,P,Bandung,2026-05-12,Referral
+C0401,Budi Siregar,P,Jakarta,2026-05-13,Referral
+C0402,Galih Halim,P,Surabaya,2026-05-14,Organik
+C0403,Galih Utami,P,Yogyakarta,2026-05-14,Organik
+C0404,Bella Halim,L,Surabaya,2026-05-14,Instagram
+C0405,Putri Permata,P,Denpasar,2026-05-14,TikTok
+C0406,Joko Putra,L,Jakarta,2026-05-15,Referral
+C0407,Citra Lestari,P,Surabaya,2026-05-18,Google Ads
+C0408,Citra Kusuma,P,Jakarta,2026-05-18,Instagram
+C0409,Dewi Anggraini,P,Yogyakarta,2026-05-19,Google Ads
+C0410,Irfan Halim,P,Surabaya,2026-05-19,TikTok
+C0411,Laras Siregar,L,Jakarta,2026-05-20,Referral
+C0412,Citra Permata,P,Makassar,2026-05-21,Instagram
+C0413,Lukman Santoso,P,Surabaya,2026-05-24,TikTok
+C0414,Putri Gunawan,P,Surabaya,2026-05-24,TikTok
+C0415,Umi Rahman,P,Jakarta,2026-05-24,TikTok
+C0416,Bella Siregar,L,Medan,2026-05-26,Organik
+C0417,Lukman Wijaya,L,Medan,2026-05-26,Instagram
+C0418,Laras Putra,L,Medan,2026-05-27,Referral
+C0419,Dewi Lestari,P,Jakarta,2026-05-27,TikTok
+C0420,Eka Kusuma,P,Makassar,2026-05-28,Google Ads
+C0421,Oki Siregar,P,Medan,2026-05-28,Instagram
+C0422,Wahyu Halim,L,Jakarta,2026-05-28,Instagram
+C0423,Yusuf Siregar,L,Surabaya,2026-05-28,Organik
+C0424,Yusuf Siregar,P,Jakarta,2026-05-29,Instagram
+C0425,Vina Anggraini,P,Surabaya,2026-05-30,TikTok
+C0426,Dewi Rahman,P,Medan,2026-05-31,Google Ads
+C0427,Fajar Gunawan,P,Jakarta,2026-06-02,Instagram
+C0428,Lukman Halim,P,Jakarta,2026-06-02,Referral
+C0429,Wahyu Wijaya,P,Yogyakarta,2026-06-02,Organik
+C0430,Umi Nugroho,L,Medan,2026-06-02,Referral
+C0431,Fitri Santoso,L,Semarang,2026-06-03,Google Ads
+C0432,Rizki Anggraini,L,Balikpapan,2026-06-07,TikTok
+C0433,Maya Putra,L,Jakarta,2026-06-07,TikTok
+C0434,Budi Utami,L,Medan,2026-06-07,Instagram
+C0435,Laras Hidayat,L,Surabaya,2026-06-12,Google Ads
+C0436,Wahyu Hidayat,L,Surabaya,2026-06-14,TikTok
+C0437,Maya Kusuma,P,Denpasar,2026-06-16,Google Ads
+C0438,Fitri Kusuma,P,Jakarta,2026-06-16,Google Ads
+C0439,Maya Gunawan,P,Makassar,2026-06-16,TikTok
+C0440,Zahra Anggraini,L,Makassar,2026-06-17,Organik
+C0441,Dewi Permata,P,Jakarta,2026-06-18,Organik
+C0442,Lukman Gunawan,P,Jakarta,2026-06-18,Google Ads
+C0443,Tono Nugroho,P,Surabaya,2026-06-19,Organik
+C0444,Hana Lestari,P,Medan,2026-06-19,Instagram
+C0445,Agus Santoso,P,Yogyakarta,2026-06-20,Google Ads
+C0446,Vina Kusuma,P,Denpasar,2026-06-20,Organik
+C0447,Kartika Lestari,P,Semarang,2026-06-21,Organik
+C0448,Tono Saputra,L,Surabaya,2026-06-22,Referral
+C0449,Dimas Anggraini,P,Yogyakarta,2026-06-22,TikTok
+C0450,Galih Nugroho,L,Palembang,2026-06-22,Referral
+C0451,Wahyu Wijaya,P,Bandung,2026-06-23,Google Ads
+C0452,Hadi Pratama,P,Yogyakarta,2026-06-23,Referral
+C0453,Fajar Siregar,P,Semarang,2026-06-25,Organik
+C0454,Galih Gunawan,P,Surabaya,2026-06-25,Google Ads
+C0455,Galih Siregar,L,Balikpapan,2026-06-26,TikTok
+C0456,Intan Wijaya,P,Semarang,2026-06-26,Google Ads
+C0457,Kartika Anggraini,L,Jakarta,2026-06-29,Organik
+C0458,Hadi Pratama,P,Makassar,2026-06-30,Instagram
+C0459,Eka Pratama,P,Jakarta,2026-06-30,Referral
+C0460,Budi Permata,L,Jakarta,2026-07-01,Referral
+C0461,Nanda Rahman,P,Denpasar,2026-07-03,Google Ads
+C0462,Sari Halim,P,Palembang,2026-07-03,Instagram
+C0463,Joko Halim,L,Bandung,2026-07-05,TikTok
+C0464,Zahra Saputra,P,Bandung,2026-07-06,Google Ads
+C0465,Irfan Halim,P,Balikpapan,2026-07-08,Organik
+C0466,Maya Halim,P,Bandung,2026-07-08,Google Ads
+C0467,Wahyu Siregar,L,Yogyakarta,2026-07-09,Referral
+C0468,Gita Siregar,P,Jakarta,2026-07-09,Organik
+C0469,Umi Putra,P,Balikpapan,2026-07-11,Referral
+C0470,Oki Halim,P,Palembang,2026-07-11,Instagram
+C0471,Hadi Kusuma,P,Bandung,2026-07-11,Instagram
+C0472,Maya Kusuma,P,Yogyakarta,2026-07-12,Instagram
+C0473,Yusuf Rahman,P,Surabaya,2026-07-12,Referral
+C0474,Andi Utami,P,Surabaya,2026-07-13,Instagram
+C0475,Nanda Nugroho,L,Surabaya,2026-07-13,Organik
+C0476,Vina Pratama,L,Surabaya,2026-07-14,Organik
+C0477,Eka Santoso,P,Medan,2026-07-15,Instagram
+C0478,Hadi Putra,P,Semarang,2026-07-15,Organik
+C0479,Vina Utami,P,Bandung,2026-07-15,Referral
+C0480,Bella Halim,P,Yogyakarta,2026-07-15,Organik
+C0481,Rizki Saputra,P,Balikpapan,2026-07-15,Instagram
+C0482,Citra Siregar,L,Medan,2026-07-17,Organik
+C0483,Budi Gunawan,P,Palembang,2026-07-19,Organik
+C0484,Maya Nugroho,P,Bandung,2026-07-20,Organik
+C0485,Vina Putra,P,Yogyakarta,2026-07-20,TikTok
+C0486,Dewi Pratama,L,Medan,2026-07-21,Referral
+C0487,Hadi Permata,P,Jakarta,2026-07-22,Organik
+C0488,Joko Hidayat,P,Palembang,2026-07-22,TikTok
+C0489,Andi Saputra,L,Jakarta,2026-07-22,Organik
+C0490,Budi Siregar,L,Jakarta,2026-07-23,Google Ads
+C0491,Hana Lestari,P,Jakarta,2026-07-23,Instagram
+C0492,Gita Rahman,P,Bandung,2026-07-24,Organik
+C0493,Fajar Wijaya,L,Semarang,2026-07-26,TikTok
+C0494,Citra Nugroho,P,Surabaya,2026-07-28,TikTok
+C0495,Intan Utami,P,Medan,2026-07-28,Referral
+C0496,Fitri Hidayat,P,Jakarta,2026-07-29,Referral
+C0497,Sari Anggraini,P,Semarang,2026-07-29,Instagram
+C0498,Galih Wijaya,P,Semarang,2026-08-01,Referral
+C0499,Umi Rahman,L,Jakarta,2026-08-01,Referral
+C0500,Fajar Siregar,L,Jakarta,2026-08-01,Instagram
+C0501,Fajar Putra,P,Makassar,2026-08-02,Google Ads
+C0502,Fajar Rahman,P,Surabaya,2026-08-04,Google Ads
+C0503,Citra Putra,L,Jakarta,2026-08-04,Instagram
+C0504,Budi Santoso,P,Jakarta,2026-08-06,Instagram
+C0505,Citra Gunawan,P,Jakarta,2026-08-07,Referral
+C0506,Umi Putra,P,Makassar,2026-08-07,Google Ads
+C0507,Eka Utami,P,Bandung,2026-08-07,Google Ads
+C0508,Citra Santoso,P,Jakarta,2026-08-08,Referral
+C0509,Laras Utami,L,Bandung,2026-08-08,Google Ads
+C0510,Joko Pratama,L,Bandung,2026-08-11,Organik
+C0511,Zahra Wijaya,P,Medan,2026-08-13,Instagram
+C0512,Hadi Saputra,P,Medan,2026-08-15,TikTok
+C0513,Agus Halim,P,Surabaya,2026-08-17,Organik
+C0514,Andi Lestari,L,Jakarta,2026-08-18,Organik
+C0515,Gita Hidayat,P,Palembang,2026-08-19,Referral
+C0516,Vina Anggraini,P,Jakarta,2026-08-20,Instagram
+C0517,Eka Saputra,P,Jakarta,2026-08-21,TikTok
+C0518,Yusuf Santoso,L,Yogyakarta,2026-08-21,Instagram
+C0519,Rizki Nugroho,P,Bandung,2026-08-22,Organik
+C0520,Joko Utami,L,Jakarta,2026-08-24,Google Ads
+C0521,Irfan Siregar,L,Palembang,2026-08-24,Referral
+C0522,Umi Rahman,L,Denpasar,2026-08-24,Instagram
+C0523,Maya Hidayat,P,Yogyakarta,2026-08-26,Instagram
+C0524,Putri Anggraini,P,Jakarta,2026-08-26,TikTok
+C0525,Vina Nugroho,P,Jakarta,2026-08-26,Organik
+C0526,Gita Wijaya,P,Jakarta,2026-08-27,TikTok
+C0527,Zahra Gunawan,P,Makassar,2026-08-27,Referral
+C0528,Zahra Siregar,L,Surabaya,2026-08-29,Organik
+C0529,Maya Utami,P,Surabaya,2026-08-30,TikTok
+C0530,Citra Halim,P,Medan,2026-09-01,Referral
+C0531,Rizki Pratama,L,Jakarta,2026-09-04,Google Ads
+C0532,Galih Kusuma,P,Denpasar,2026-09-06,Instagram
+C0533,Fajar Utami,L,Surabaya,2026-09-07,Google Ads
+C0534,Vina Lestari,P,Semarang,2026-09-08,Google Ads
+C0535,Fajar Kusuma,L,Jakarta,2026-09-09,Instagram
+C0536,Dewi Utami,P,Surabaya,2026-09-12,Organik
+C0537,Bella Utami,P,Makassar,2026-09-12,Organik
+C0538,Nanda Hidayat,P,Palembang,2026-09-13,Organik
+C0539,Fitri Utami,P,Semarang,2026-09-14,Instagram
+C0540,Yusuf Hidayat,P,Palembang,2026-09-17,Organik
+C0541,Intan Anggraini,P,Semarang,2026-09-19,TikTok
+C0542,Fajar Hidayat,P,Denpasar,2026-09-19,Instagram
+C0543,Oki Santoso,P,Palembang,2026-09-19,Organik
+C0544,Zahra Lestari,P,Makassar,2026-09-19,Google Ads
+C0545,Oki Permata,P,Balikpapan,2026-09-19,Instagram
+C0546,Citra Rahman,L,Surabaya,2026-09-20,Organik
+C0547,Oki Wijaya,P,Jakarta,2026-09-21,Referral
+C0548,Umi Permata,L,Jakarta,2026-09-25,Referral
+C0549,Lukman Kusuma,P,Medan,2026-09-25,Google Ads
+C0550,Wahyu Hidayat,L,Jakarta,2026-09-26,Google Ads
+C0551,Gita Lestari,P,Jakarta,2026-09-28,Organik
+C0552,Tono Lestari,P,Jakarta,2026-09-28,Organik
+C0553,Agus Gunawan,L,Semarang,2026-09-29,Instagram
+C0554,Wahyu Anggraini,P,Jakarta,2026-10-01,Referral
+C0555,Fitri Kusuma,L,Jakarta,2026-10-01,Organik
+C0556,Tono Gunawan,L,Bandung,2026-10-02,Referral
+C0557,Sari Wijaya,L,Jakarta,2026-10-02,Instagram
+C0558,Sari Rahman,P,Denpasar,2026-10-02,Google Ads
+C0559,Laras Wijaya,L,Jakarta,2026-10-03,Instagram
+C0560,Putri Nugroho,P,Surabaya,2026-10-03,TikTok
+C0561,Bella Saputra,L,Medan,2026-10-05,Referral
+C0562,Fajar Anggraini,L,Makassar,2026-10-06,Instagram
+C0563,Zahra Nugroho,P,Bandung,2026-10-06,Organik
+C0564,Citra Putra,P,Semarang,2026-10-07,Google Ads
+C0565,Putri Lestari,P,Jakarta,2026-10-07,Organik
+C0566,Hana Utami,P,Surabaya,2026-10-07,Organik
+C0567,Dewi Permata,L,Bandung,2026-10-09,TikTok
+C0568,Umi Lestari,P,Semarang,2026-10-09,Instagram
+C0569,Wahyu Halim,P,Yogyakarta,2026-10-09,Instagram
+C0570,Eka Saputra,L,Bandung,2026-10-09,TikTok
+C0571,Bella Kusuma,L,Semarang,2026-10-10,Organik
+C0572,Hana Utami,L,Balikpapan,2026-10-11,Google Ads
+C0573,Lukman Anggraini,P,Surabaya,2026-10-11,Organik
+C0574,Vina Gunawan,L,Yogyakarta,2026-10-12,Referral
+C0575,Hana Halim,L,Bandung,2026-10-13,Organik
+C0576,Intan Siregar,L,Semarang,2026-10-14,Google Ads
+C0577,Oki Saputra,P,Bandung,2026-10-14,Google Ads
+C0578,Dewi Gunawan,L,Jakarta,2026-10-15,TikTok
+C0579,Dewi Utami,P,Yogyakarta,2026-10-15,Instagram
+C0580,Galih Putra,P,Medan,2026-10-17,TikTok
+C0581,Agus Gunawan,P,Bandung,2026-10-17,Referral
+C0582,Putri Siregar,P,Yogyakarta,2026-10-17,Organik
+C0583,Umi Putra,P,Surabaya,2026-10-17,Organik
+C0584,Dimas Pratama,L,Makassar,2026-10-19,Google Ads
+C0585,Gita Putra,L,Makassar,2026-10-20,Google Ads
+C0586,Joko Santoso,L,Palembang,2026-10-21,Organik
+C0587,Agus Permata,P,Jakarta,2026-10-21,Organik
+C0588,Vina Nugroho,P,Surabaya,2026-10-21,Instagram
+C0589,Hana Utami,P,Makassar,2026-10-23,Instagram
+C0590,Nanda Utami,L,Yogyakarta,2026-10-23,Organik
+C0591,Putri Anggraini,L,Surabaya,2026-10-23,Google Ads
+C0592,Eka Utami,P,Denpasar,2026-10-24,TikTok
+C0593,Lukman Lestari,P,Surabaya,2026-10-24,Organik
+C0594,Dewi Pratama,P,Surabaya,2026-10-24,Instagram
+C0595,Hana Saputra,L,Yogyakarta,2026-10-25,Instagram
+C0596,Intan Utami,L,Denpasar,2026-10-26,Instagram
+C0597,Putri Gunawan,P,Makassar,2026-10-26,Organik
+C0598,Intan Hidayat,L,Jakarta,2026-10-27,Referral
+C0599,Tono Wijaya,P,Yogyakarta,2026-10-30,Organik
+C0600,Dimas Rahman,P,Jakarta,2026-10-30,Google Ads

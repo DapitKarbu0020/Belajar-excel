@@ -1,59 +1,46 @@
-# Jalur Data Analyst — Tracker Belajar Excel (Dasar → Mahir)
+# Jalur Data Analyst — Belajar & Tracking Progres
 
-Website statis untuk belajar & melacak progres menjadi Data Analyst.
-**Tanpa database, tanpa install, tanpa server.**
+Website statis untuk belajar menjadi **Data Analyst**, dari nol sampai siap melamar kerja.
+**Tanpa database, tanpa server.** Klik dua kali `index.html` untuk membukanya.
 
-## Cara pakai
-1. Ekstrak folder ini.
-2. Klik dua kali `index.html`, maka website langsung terbuka di browser (Chrome, Edge, Firefox, Safari, HP juga bisa).
-3. Progres tersimpan otomatis di browser (localStorage).
+## Isi
+**9 level · 52 pelajaran** (materi, latihan, kuis, catatan, sumber YouTube/Google/Microsoft/Kaggle)
 
-Pindah laptop/HP? Buka **⚙️ Pengaturan & Backup → Ekspor progres**, lalu di perangkat lain pilih **Impor progres**.
+| Level | Topik |
+|---|---|
+| 1 | Fondasi: peran DA, proses analisis, berpikir analitis, jenis data, metrik & KPI, etika |
+| 2 | Spreadsheet: Excel & Google Sheets (rumus, lookup, PivotTable, Excel modern, What-If) |
+| 3 | Statistik: deskriptif, distribusi, sampling & CI, uji hipotesis & A/B test, regresi |
+| 4 | SQL: SELECT, GROUP BY, JOIN, CTE, window function, cohort & funnel, dialek |
+| 5 | Data cleaning & EDA: checklist, Power Query, SQL & pandas, kerangka EDA |
+| 6 | Visualisasi & BI: prinsip grafik, desain dashboard, **Power BI, Tableau, Looker Studio**, storytelling |
+| 7 | Python: dasar, pandas, groupby/merge, matplotlib/seaborn, notebook end-to-end |
+| 8 | Analisis bisnis: penjualan & tren, funnel, cohort & retensi, RFM, marketing (CAC/LTV) |
+| 9 | Karier: portofolio, CV & LinkedIn, interview & tes teknis, roadmap 6 bulan |
+
+## Praktik
+| Latihan | Keterangan |
+|---|---|
+| 🗄️ **Lab SQL** | 43 soal interaktif di browser (SQLite), dicek otomatis, **berjalan offline** |
+| 🐍 **Lab Python** | 25 soal Python & pandas di browser (Pyodide), dicek otomatis. **Butuh internet** saat pertama memuat |
+| 📗 **File Excel** | 9 studi kasus `.xlsx` dengan kolom Cek otomatis (`latihan/excel`) |
+| 📊 **Proyek BI** | 3 proyek: Power BI, Tableau, Looker Studio, dengan angka acuan |
+| ⬇️ **Unduhan** | `tokokita.db`, `tokokita.sql`, soal & kunci SQL, 3 notebook (soal + kunci), 6 CSV |
+
+Semua latihan memakai dataset fiktif **TokoKita** (toko online): customers, products, orders, order_items, marketing, web_events.
+
+## Progres
+Tersimpan otomatis di browser (localStorage). Pindah perangkat: ⚙️ Pengaturan → Ekspor progres → Impor di perangkat lain.
+Progres dari versi sebelumnya otomatis dipindahkan ke struktur 9 level.
 
 ## Struktur folder
 ```
-index.html          ← halaman utama
-assets/style.css    ← tampilan & animasi
-assets/app.js       ← logika tracking, kuis, pencarian, lencana
-data/materi.js      ← SEMUA MATERI (edit di sini untuk menambah pelajaran)
-data/latihan.js     ← daftar file latihan Excel
-latihan/*.xlsx      ← 9 FILE LATIHAN EXCEL (studi kasus)
+index.html
+assets/        style.css, app.js (tracking), labs.js (Lab SQL/Python, Proyek BI)
+data/          materi.js, latihan.js, lab-sql.js, lab-py.js, dataset.js
+vendor/        sql.js (SQLite WebAssembly, lisensi MIT)
+latihan/excel  9 file .xlsx
+latihan/sql    tokokita.db, tokokita.sql, soal-sql.sql, kunci-sql.sql
+latihan/python 3 notebook soal + 3 notebook kunci (.ipynb)
+latihan/data   6 file CSV
 ```
-
-## File latihan Excel (folder `latihan/`)
-| No | Studi kasus | Level | Fokus |
-|---|---|---|---|
-| 01 | Warung Bu Sari | Dasar | SUM/AVERAGE/MAX, referensi absolut |
-| 02 | Kedai Nusantara (5 cabang) | Menengah | VLOOKUP, IF, SUMIFS/COUNTIFS |
-| 03 | PT Nusantara Data (HR) | Menengah | TRIM/PROPER, DATEDIF, IF bertingkat |
-| 04 | TokoKita.id (e-commerce) | Lanjut | Data cleaning, duplikat, mapping |
-| 05 | Sentosa Office Supply (1.000 order) | Lanjut | PivotTable |
-| 06 | Kopi Senja | Mahir | Dashboard KPI + grafik |
-| 07 | Bananaku | Mahir | BEP, Goal Seek, PMT, tabel sensitivitas |
-| 08 | GlowUp Skincare | Studi kasus | CTR/ROAS, statistik, outlier |
-| 09 | KirimCepat Logistics | Studi kasus | NETWORKDAYS, SLA |
-
-Setiap file memiliki sheet **Petunjuk**, **Data**, **Soal** (kolom *Cek* menilai otomatis ✅/❌ + skor), dan **Kunci** (tab merah).
-Kerjakan di sel kuning. Bisa dibuka di Excel 2010+, Excel 365, maupun Google Sheets. Data seluruhnya fiktif.
-
-## Isi materi
-| Level | Topik |
-|---|---|
-| 1. Dasar Excel | Antarmuka, tipe data, SUM/AVERAGE/COUNT, referensi $, format, sort & filter |
-| 2. Menengah | IF/IFS, SUMIFS/COUNTIFS, fungsi teks, tanggal, VLOOKUP, conditional formatting, data validation |
-| 3. Lanjutan | INDEX-MATCH, XLOOKUP, Excel Table, PivotTable, visualisasi, data cleaning |
-| 4. Mahir | Dynamic array, LET/LAMBDA, Power Query, Power Pivot & DAX, What-If & statistik, dashboard, Macro/VBA |
-| 5. Ekosistem | Proses analisis (Google), statistik, SQL, Power BI, Python pandas, portofolio |
-
-Setiap pelajaran berisi: materi + contoh rumus (bisa disalin), latihan yang bisa dicentang, kuis, catatan pribadi, dan link sumber (YouTube, Google/Coursera, Microsoft, Exceljet, Kaggle).
-
-## Fitur tracking
-- Progres per pelajaran, per level, dan total (ring + bar animasi)
-- Waktu belajar aktif tercatat otomatis + target menit harian
-- Streak harian 🔥 dan heatmap aktivitas 16 minggu
-- 12 lencana pencapaian
-- Pencarian cepat `Ctrl+K`, shortcut `D` (selesai), `N`/`P` (next/prev), `H` (beranda)
-- Mode gelap, responsif untuk HP
-
-## Menambah materi
-Buka `data/materi.js`, salin satu objek pelajaran, lalu ganti `id` (harus unik) dan isinya.
