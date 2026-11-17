@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jalur Data Analyst — Tracker Belajar Excel</title>
+<meta name="description" content="Tracker belajar Data Analyst: Excel dasar sampai mahir, SQL, Power BI, Python. Progres tersimpan di browser." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2316a34a'/><path d='M9 22V10h3l4 6 4-6h3v12h-3v-7l-4 6-4-6v7z' fill='white'/></svg>" />
+</head>
+<body>
+<div class="read-progress" id="readProgress"></div>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a href="#/" class="brand">
+      <span class="brand-logo">fx</span>
+      <span class="brand-text"><b>Jalur Data Analyst</b><small>Excel → SQL → BI</small></span>
+    </a>
+    <div class="side-progress">
+      <div class="side-progress-top"><span>Progres total</span><b id="sideProgPct">0%</b></div>
+      <div class="bar"><i id="sideProgBar"></i></div>
+    </div>
+    <a href="#/latihan" class="side-files" id="sideFiles">📥 <span>File Latihan Excel</span><b id="sideFilesCount">0/0</b></a>
+    <nav class="side-nav" id="sideNav"></nav>
+    <div class="side-foot">
+      <button class="btn ghost sm" data-action="settings">⚙️ Pengaturan & Backup</button>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn only-mobile" id="menuBtn" aria-label="Menu">☰</button>
+      <button class="search-trigger" data-action="search">
+        <span>🔎 Cari materi, rumus…</span><kbd>Ctrl K</kbd>
+      </button>
+      <div class="top-actions">
+        <div class="streak-chip" id="streakChip" title="Hari berturut-turut belajar">🔥 <b>0</b></div>
+        <button class="icon-btn" id="themeBtn" aria-label="Ganti tema">🌙</button>
+      </div>
+    </header>
+    <div class="view" id="view"></div>
+  </main>
+</div>
+
+<!-- Command palette -->
+<div class="modal" id="searchModal" aria-hidden="true">
+  <div class="modal-card palette">
+    <input id="searchInput" type="text" placeholder="Ketik: xlookup, pivot, sql, tanggal…" autocomplete="off" />
+    <div class="palette-list" id="searchList"></div>
+    <div class="palette-foot"><span><kbd>↑</kbd><kbd>↓</kbd> pilih</span><span><kbd>Enter</kbd> buka</span><span><kbd>Esc</kbd> tutup</span></div>
+  </div>
+</div>
+
+<!-- Settings -->
+<div class="modal" id="settingsModal" aria-hidden="true">
+  <div class="modal-card">
+    <div class="modal-head"><h3>Pengaturan & Backup</h3><button class="icon-btn" data-close>✕</button></div>
+    <p class="muted">Progres tersimpan di <b>browser ini</b> (localStorage), tanpa database. Untuk pindah ke perangkat lain, ekspor lalu impor file backup.</p>
+    <label class="field">Nama panggilan
+      <input id="nameInput" type="text" placeholder="mis. Hafid" maxlength="30" />
+    </label>
+    <label class="field">Target belajar per hari (menit)
+      <input id="goalInput" type="number" min="5" max="300" step="5" />
+    </label>
+    <div class="row gap wrap">
+      <button class="btn" data-action="export">⬇️ Ekspor progres (.json)</button>
+      <label class="btn ghost">⬆️ Impor progres<input type="file" id="importFile" accept=".json,application/json" hidden /></label>
+      <button class="btn danger ghost" data-action="reset">🗑️ Reset semua</button>
+    </div>
+    <div class="shortcuts">
+      <h4>Shortcut keyboard</h4>
+      <div><kbd>Ctrl</kbd>+<kbd>K</kbd> / <kbd>/</kbd> Cari</div>
+      <div><kbd>D</kbd> Tandai pelajaran selesai</div>
+      <div><kbd>N</kbd> / <kbd>P</kbd> Pelajaran berikut / sebelumnya</div>
+      <div><kbd>H</kbd> Ke beranda</div>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+<canvas id="confetti"></canvas>
+
+<script src="data/materi.js"></script>
+<script src="data/latihan.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
